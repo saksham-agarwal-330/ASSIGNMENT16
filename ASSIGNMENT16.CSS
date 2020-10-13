@@ -1,0 +1,103 @@
+body{
+  border: 20px groove paleturquoise;
+  background-color: ghostwhite;
+}
+h1{
+text-align: center;
+font-family: 'Lobster Two';
+
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+
+}
+#p1{
+  color:skyblue;
+  text-align: center;
+  font-family: Great Vibes, cursive;
+  font-size: 50px;
+  font-weight: bold;
+}
+div.about p:first-of-type{
+  font-size: 30px;
+  font-family: Sansita Swashed, cursive;
+  color:steelblue;
+  text-align: center;
+}
+div.about p:last-of-type{
+  color:brown;
+  background-color:#f2f2f2;
+  font-size: 30px;
+  font-family: Sansita Swashed, cursive;
+  text-align: center;
+
+}
+div.fact1 p:first-of-type{
+  color:#d926ac;
+  background-color:#f2f2f2;
+  font-size: 30px;
+  font-family: Sansita Swashed, cursive;
+  text-align: center;
+}
+div.fact1 p:last-of-type{
+  color:#ff3300;
+  font-family: Dancing Script,cursive;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+div.fact2 p:first-of-type{
+  font-size: 30px;
+  font-family: Sansita Swashed, cursive;
+  color:lime;
+  text-align: center;
+}
+div.fact2 p:last-of-type{
+  font-size: 30px;
+  font-family: Sansita Swashed, cursive;
+  color:green;
+  text-align: center;
+}
+#p2{
+  color:blueviolet;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+
+}
+div.form-field{
+  text-align: center;
+  font-family: Lobster;
+
+}
+div.form-field input:invalid{
+  background-color: lightcoral;
+  border:red;
+  border-radius: 5px;
+}
+div.form-field input:valid{
+  background-color: rgb(127, 248, 14);
+  border: lawngreen;
+  border-radius: 5px;
+}
+div.form-field input:out-of-range{
+  background-color: cornflowerblue;
+}
+div.form-field input:in-range{
+  background-color: yellowgreen;
+}
+ input:in-range + label::after{
+  content: 'Correct guess';
+}
+ input:in-range + label::before{
+  content: 'Yay!';
+}
+ input:out-of-range + label::after{
+  content: 'Wrong guess';
+}
+ input:out-of-range + label::before{
+  content: 'ufff.....';
+}
